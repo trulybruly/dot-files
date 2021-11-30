@@ -4,4 +4,20 @@ pacman -S --needed git
 
 mkdir temp_for_dotfiles
 cd temp_for_dotfiles
-git clone https://github.com/trulybruly/
+git clone https://github.com/trulybruly/dot-files.git
+
+cd dot-files
+echo "what kind of setup is it?"
+echo "1 - full arch"
+echo "2 - server debian/ubuntu"
+read _type
+
+if [ $_type -eq 1 ];
+then
+    sh full_arch.sh
+elif [ $_type -eq 2 ]
+    sh server_deb.sh
+fi
+
+cd ../..
+rm -rf temp_for_dotfiles

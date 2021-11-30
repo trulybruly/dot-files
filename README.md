@@ -1,11 +1,8 @@
 trulybruly's dotfiles
 ==========
 
-Download all scripts
+Download all scripts and run helper
 
-> `curl https://raw.githubusercontent.com/trulybruly/easytoyou-auto/e823979f99988b98b09e2bc437794e4cd851443b/combiner.py | sh`
+ `curl https://raw.githubusercontent.com/trulybruly/dot-files/master/install | sh`
 
-1. For full installation process
-> `cd `
-
-
+That`s all
