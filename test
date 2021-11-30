@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd ~
+list_directories="$(ls -a)"
+if [[ "$list_directories" =~ ".zshrc" ]];
+then
+    echo 1
+else
+    echo 2
+fi

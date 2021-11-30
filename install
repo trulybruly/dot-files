@@ -1,0 +1,7 @@
+#!/bin/bash
+
+pacman -S --needed git
+
+mkdir temp_for_dotfiles
+cd temp_for_dotfiles
+git clone https://github.com/trulybruly/

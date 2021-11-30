@@ -1,0 +1,52 @@
+#system update
+pacman -Syyu
+
+# check if all must-have things installed
+pacman -S --needed git base-devel wget firefox curl
+
+# text editor
+pacman -S micro
+
+# file manager
+pacman -S nnn
+
+# new folder for everything
+cd ~
+mkdir start_inst
+cd start_inst
+
+# yay installer
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ../..
+
+# avoid «?» In zsh
+# keep URL’s in quotes
+
+# install pamac 
+
+yay -S pamac-aur
+
+# install vscodium
+pamac install code
+## powerline_fonts
+cd ~
+list_directories = "$(ls -a)"
+if [[ "$_list_directories" =~ ".fonts"]];
+then 
+    mkdir ./.fonts
+fi
+cd ~/.fonts
+wget https://github.com/trulybruly/Menlo-for-Powerline/raw/master/Menlo%20for%20Powerline.ttf
+
+## editing settings.json
+cd ~/.config/Code - OSS/User/
+rm settings.json
+wget 
+
+# mail manager
+pacman -S geary
+
+
+
