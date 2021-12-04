@@ -42,7 +42,7 @@ pamac install code
 ## powerline_fonts
 cd ~
 list_directories = "$(ls -a)"
-if [[ "$_list_directories" =~ ".fonts"]];
+if [ ! [ "$_list_directories" =~ ".fonts"]];
 then 
     mkdir ./.fonts
 fi
