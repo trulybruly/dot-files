@@ -15,30 +15,30 @@ then
     pacman -S mesa
 
 # check if all must-have things installed
-pacman -S --needed git base-devel wget firefox curl tmux
+sudo pacman -S --needed git base-devel wget firefox curl tmux
 
 # htop and cooler htop
-pacman -S htop bottom
+sudo pacman -S htop bottom
 
 # text editor
-pacman -S micro
+sudo pacman -S micro
 
 # file manager
-pacman -S nnn
+sudo pacman -S nnn
 
 # yay installer
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+sudo makepkg -si
 cd ..
 
 # avoid «?» In zsh
 # keep URL’s in quotes
 
 # install pamac 
-yay -S pamac-aur
+sudo yay -S pamac-aur
 # install vscodium
-pamac install code
+sudo pamac install code
 ## powerline_fonts
 cd ~
 list_directories = "$(ls -a)"
@@ -56,14 +56,14 @@ cp $DOT_DIRECTORY/settings.json .
 cd ~
 
 # mail manager
-pacman -S geary
+sudo pacman -S geary
 
 #oh-my-zsh
-pacman -S zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-#autosuggestions and syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+#pacman -S zsh
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+##autosuggestions and syntax-highlighting
+#git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+#git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 #.zshrc
 curl -Ls https://raw.githubusercontent.com/trulybruly/dotfiles/main/.cfg/start.sh | sh
 

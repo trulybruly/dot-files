@@ -1,8 +1,20 @@
 trulybruly's dotfiles
 ==========
 
-Download script and run helper
+## ***First of all you need to install oh-my-zsh***
+### *Debian*
+>sudo apt install zsh
+### *or arch*
+>sudo pacman -S zsh
 
- `sudo curl https://raw.githubusercontent.com/trulybruly/dot-files/master/install | sh`
+>sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\
+#autosuggestions and syntax-highlighting\
+cd ${HOME}\
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions\
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
-That`s all
+## ***Download script and run helper***
+
+>`sudo curl https://raw.githubusercontent.com/trulybruly/dot-files/master/install | sh`
+
+## ***That`s all***
