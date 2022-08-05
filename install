@@ -10,10 +10,9 @@ echo "1 - full arch"
 echo "2 - server/raspberry debian"
 read _type
 
-if [ $_type -eq 1 ];
-then
+if [ $_type -eq 1 ]; then
     sh full-arch-gnome/full_arch.sh
-elif [ $_type -eq 2 ]
+elif [ $_type -eq 2 ]; then
     sh debian/server_deb.sh
 fi
 
