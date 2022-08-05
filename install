@@ -1,10 +1,14 @@
 #!/bin/bash
 
+echo mkdir temp_for_dotfiles
 mkdir temp_for_dotfiles
 cd temp_for_dotfiles
+echo git clone welcome-installers
 git clone https://github.com/trulybruly/linux-welcome-installers
 
+echo cd into
 cd linux-welcome-installers
+echo ---------
 echo "what kind of setup is it?"
 echo "1 - full arch"
 echo "2 - server/raspberry debian"
@@ -16,7 +20,9 @@ elif [ "$_type" = "2" ];
 then sh debian/server_deb.sh
 fi
 
+echo cd../..
 cd ../..
+echo rm
 rm -rf temp_for_dotfiles
 
 exit 0;
