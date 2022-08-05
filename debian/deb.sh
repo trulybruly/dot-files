@@ -1,24 +1,25 @@
 DOT_DIRECTORY=$(pwd)
 
 #system update
-apt update
+apt-get update
 
 # check if all must-have things installed
-apt-get --needed git base-devel wget firefox curl tmux
+apt install base-devel wget tmux
 
 # htop and cooler htop
-apt-get -S htop bottom
+apt install htop bottom
 
 # text editor
-apt-get micro
+apt install micro
 
 # file manager
-apt-get -S nnn
+apt install nnn
 
 # avoid «?» In zsh
 # keep URL’s in quotes
 
 #oh-my-zsh
+apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #autosuggestions and syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
