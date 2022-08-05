@@ -31,8 +31,8 @@ cp ${DOT_DIRECTORY}/debian/.zshrc ${HOME}
 #   adding 
 ##Path to your oh-my-zsh installation.
 #export ZSH="/home/<admin>/.oh-my-zsh"
-_zshinstall = $(HOME)/.oh-my-zsh
-sed -i '1s@^@export ZSH="'$_zshinstall'"\n@' ${HOME}.zshrc
-sed -i '1s@^@#Path to your oh-my-zsh installation\n@' ${HOME}.zshrc
+_zshinstall=${HOME}/.oh-my-zsh
+sed -i '1s@^@export ZSH="'$_zshinstall'"\n@' ${HOME}/.zshrc
+sed -i '1s@^@#Path to your oh-my-zsh installation\n@' ${HOME}/.zshrc
 
 source ${HOME}.zshrc
