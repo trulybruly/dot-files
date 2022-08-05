@@ -15,9 +15,9 @@ echo "2 - server/raspberry debian"
 read _type
 
 if [ "$_type" = "1" ]; 
-then sh full-arch-gnome/full_arch.sh
+then zsh full-arch-gnome/full_arch.sh
 elif [ "$_type" = "2" ]; 
-then sh debian/deb.sh
+then zsh debian/deb.sh
 fi
 
 echo cd../..
@@ -25,6 +25,6 @@ cd ../..
 echo rm
 rm -rf temp_for_dotfiles
 
-source .zshrc
+#source .zshrc
 
 exit 0;
