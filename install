@@ -15,9 +15,9 @@ echo "2 - server/raspberry debian"
 read _type
 
 if [ "$_type" = "1" ]; 
-then sh full-arch-gnome/full_arch.sh
+then sudo sh full-arch-gnome/full_arch.sh
 elif [ "$_type" = "2" ]; 
-then sh debian/deb.sh
+then sudo sh debian/deb.sh
 fi
 
 echo cd../..
