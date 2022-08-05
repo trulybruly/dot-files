@@ -67,3 +67,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/p
 curl -Ls https://raw.githubusercontent.com/trulybruly/dotfiles/main/.cfg/start.sh | sh
 
 source .zshrc
+
+exit 0;
