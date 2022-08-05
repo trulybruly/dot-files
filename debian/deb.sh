@@ -34,3 +34,5 @@ sed -i '1s@^@export ZSH="'$_zshinstall'"\n@' ${HOME}.zshrc
 sed -i '1s@^@#Path to your oh-my-zsh installation\n@' ${HOME}.zshrc
 
 source .zshrc
+
+exit 0;
