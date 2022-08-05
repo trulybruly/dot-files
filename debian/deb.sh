@@ -1,4 +1,5 @@
 DOT_DIRECTORY=$(pwd)
+echo $DOT_DIRECTORY
 
 #system update
 sudo apt-get update
@@ -26,7 +27,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 #.zshrc
 rm ${HOME}.zshrc
-cp {DOT_DIRECTORY}/.zshrc ${HOME}
+cp ${DOT_DIRECTORY}/.zshrc ${HOME}
 #   adding 
 ##Path to your oh-my-zsh installation.
 #export ZSH="/home/<admin>/.oh-my-zsh"
@@ -35,5 +36,3 @@ sed -i '1s@^@export ZSH="'$_zshinstall'"\n@' ${HOME}.zshrc
 sed -i '1s@^@#Path to your oh-my-zsh installation\n@' ${HOME}.zshrc
 
 source .zshrc
-
-exit 0;
