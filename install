@@ -17,7 +17,7 @@ read _type
 if [ "$_type" = "1" ]; 
 then sh full-arch-gnome/full_arch.sh
 elif [ "$_type" = "2" ]; 
-then sh debian/server_deb.sh
+then sh debian/deb.sh
 fi
 
 echo cd../..
