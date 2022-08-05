@@ -26,13 +26,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 #.zshrc
-rm ${HOME}.zshrc
-cp ${DOT_DIRECTORY}/.zshrc ${HOME}
+rm ${HOME}/.zshrc
+cp ${DOT_DIRECTORY}/debian/.zshrc ${HOME}
 #   adding 
 ##Path to your oh-my-zsh installation.
 #export ZSH="/home/<admin>/.oh-my-zsh"
-_zshinstall = ${HOME}/.oh-my-zsh
+_zshinstall = $(HOME)/.oh-my-zsh
 sed -i '1s@^@export ZSH="'$_zshinstall'"\n@' ${HOME}.zshrc
 sed -i '1s@^@#Path to your oh-my-zsh installation\n@' ${HOME}.zshrc
 
-source .zshrc
+source ${HOME}.zshrc
