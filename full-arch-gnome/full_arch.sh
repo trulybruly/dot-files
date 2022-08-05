@@ -67,6 +67,6 @@ sudo pacman -S geary
 #.zshrc
 curl -Ls https://raw.githubusercontent.com/trulybruly/dotfiles/main/.cfg/start.sh | sh
 
-source .zshrc
+#source .zshrc
 
 exit 0;
