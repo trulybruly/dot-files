@@ -1,7 +1,7 @@
 DOT_DIRECTORY=$(pwd)
 
 #system update
-pacman -Syyu
+#pacman -Syyu
 echo "Who is the manufacturer of your video card"
 echo "1 - NVIDIA"
 echo "2 - AMD"
