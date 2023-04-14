@@ -65,6 +65,6 @@ sudo pacman -S geary
 #git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 #git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 #.zshrc
-curl -Ls https://raw.githubusercontent.com/trulybruly/dotfiles/main/.cfg/start.sh | sh
+curl -Ls https://raw.githubusercontent.com/trulybruly/dotfiles/main/.cfg/start.sh | zsh
 
 #source .zshrc
